@@ -6,7 +6,6 @@ $usuario_existe = false;
 if (isset($_GET['email']) && !empty($_GET['email'])) {
     $email = $_GET['email'];
     
-    // Verifica se o email existe no banco (Proteção com Prepared Statement)
     $sql = "SELECT id FROM usuarios WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$email]);
@@ -57,4 +56,5 @@ if (isset($_GET['email']) && !empty($_GET['email'])) {
     </div>
 </div>
 </body>
+
 </html>
