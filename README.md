@@ -25,6 +25,3 @@ Este projeto é um sistema web completo para gerenciamento de uma locadora, dese
     * Selecione o banco `locadora` e importe o arquivo `locadora.sql` (incluso neste repositório).
 5.  **Acesso:** Abra seu navegador e acesse `http://localhost/locadora/`.
 
-## Diagrama do Banco de Dados
-
-(Tire um print da estrutura do seu banco no MySQL Workbench e cole a imagem aqui)
