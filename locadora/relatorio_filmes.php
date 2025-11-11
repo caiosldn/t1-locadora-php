@@ -52,7 +52,9 @@ class PDF extends FPDF
             $this->Cell($w[0], 6, $row['titulo'], 'LR', 0, 'L', $fill);
             $this->Cell($w[1], 6, $row['genero'], 'LR', 0, 'L', $fill);
             $this->Cell($w[2], 6, $row['ano'], 'LR', 0, 'R', $fill);
-            $this.
+            
+            $this->Ln(); 
+            
             $fill = !$fill;
         }
         $this->Cell(array_sum($w), 0, '', 'T');
